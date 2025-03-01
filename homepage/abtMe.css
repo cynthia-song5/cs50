@@ -1,0 +1,66 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  h1 {
+  /*   font-style: italic; */
+    color: #698C55;
+  }
+  h2 {
+  /*   font-style: italic; */
+    color: #96A563;
+  }
+  /* button{
+    background-color: #CDCC8C;
+    border: none;
+    border-radius: 2px;
+  } */
+
+  /* I don't really understand the code below, but it changes the color of the button! */
+  .button {
+    background-color: #CDCC8C;
+    border: none;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    padding: 10px 24px;
+  }
+
+  .button:hover {
+
+    background-color: #E0D6A7;
+
+  }
+
+  /* nav bar css */
+  ul{
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 1em;
+    background-color: green;
+    margin: 0;
+  }
+  li{
+    display: inline;
+  }
+  li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3 em;
+    padding: 2em;
+  }
+  li a:hover{
+    background-color: #0f5c0f;
+  }
+  .p{
+    text-align: center;
+  }
+
+  .bod{
+    margin: 10px;
+  }

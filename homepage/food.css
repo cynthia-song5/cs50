@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  h1{
+  /*   font-family:"Rany-Bold", sans-serif;
+  font-family: 'Lato', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  }
+  h2{
+    /* display:inline; */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  p{
+    display:inline;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: #adadad;
+    text-decoration-thickness: 2px;
+    transition-duration: 0.4s;
+  }
+  pu{
+    border: 0;
+    font-size: 10px;
+  }
+  img{
+    height: 200px;
+    width: 200px;
+    object-fit:cover;
+  }
+
+  img:hover {
+
+  filter: opacity(0.4) ;
+  }
+  figcaption{
+    text-align: center;
+  }
+   figure {
+    text-align: center;
+    text-indent: 0;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  .container{
+      display: flex;
+  /*     flex-direction: row;
+  /*     justify-content: center; */
+      flex-wrap: wrap;
+  }
+  .bar1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+  }
+  .bar2{
+    display: flex;
+    flex-direction: row;
+    column-gap: 155px;
+    margin:  0 0 12px;
+  }
+
+  /* nav bar css */
+  ul{
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 1em;
+    background-color: green;
+    margin: 0;
+  }
+  li{
+    display: inline;
+  }
+  li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3 em;
+    padding: 2em;
+  }
+  li a:hover{
+    background-color: #0f5c0f;
+  }
+  p{
+    text-align: center;
+  }

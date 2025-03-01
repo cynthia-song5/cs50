@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  /* nav bar css */
+  ul{
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 1em;
+    background-color: green;
+    margin: 0;
+  }
+  li{
+    display: inline;
+  }
+  li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3 em;
+    padding: 2em;
+  }
+  li a:hover{
+    background-color: #0f5c0f;
+  }
+  p{
+    text-align: center;
+  }
+  .box {
+    box-shadow: 0 0 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  div{
+    padding:10px;
+  }
+  .navBar{
+    padding: 0px;
+  }
+  img{
+   width: 30%;
+  }
+  /* problem */
+  .image-txt-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  /*   gap: 8%; */
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  h1{
+     font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+  }
+  p{
+      font-family: Roboto, Arial, sans-serif;
+
+  }
+  .title{
+    font-weight: 600;
+  }
