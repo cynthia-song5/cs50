@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Egg Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Egg Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which color is NOT a natural color for an eggshell?</h3>
+                <button class = "incorrect">brown</button>
+                <button class = "incorrect">blue</button>
+                <button class = "correct">purple</button>
+                <button class = "incorrect">green</button>
+
+                <p id = "feedback1"></p>
+            </div>
+<!-- free range eggs for the win -->
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>How many hours does it take for a hen to develop an egg?</h3>
+<!-- input box for user -->
+                <input id = "input" type = "text"></input>
+                <p style = "display: inline;">hours</p>
+                <button id = "frq">Check Answer</button>
+<!-- used to let the user know if they answered the question correctly or incorrectly -->
+                <p id = "feedback2"></p>
+            </div>
+        </div>
+        <script>
+
+            // code runs once the DOM is done loading
+            window.addEventListener("load", function (){
+
+                // MCQ
+                // when the correct answer is selected, change color
+                let correct = document.querySelector('.correct');
+
+                correct.addEventListener('click', function(){
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'correct! you are a smart little egg';
+                });
+
+                // incorrect answers turn red
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function () {
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'incorrect. eat more eggs to become smarter';
+                    });
+                }
+
+                 //check free response submission
+                document.querySelector('#frq').addEventListener('click', function () {
+                let input = document.querySelector('input');
+                if (input.value === '22-24' || input.value === '22'|| input.value === '23' || input.value === '24') {
+                    input.style.backgroundColor = 'green';
+                    document.querySelector('#feedback2').innerHTML = 'correct! you are a smart little egg!';
+                } else {
+                    input.style.backgroundColor = 'red';
+                    document.querySelector('#feedback2').innerHTML = 'incorrect. eat more eggs to become smarter';
+                    document.querySelector('#input').innerHTML = '';
+                }
+            });
+            });
+
+            // function check
+            // TODO: Add code to check answers to questions
+        </script>
+    </body>
+</html>

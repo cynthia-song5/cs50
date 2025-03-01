@@ -1,0 +1,12 @@
+sort1 uses: Bubble
+
+How do you know?: Bubble sort takes the greatest amount of time of the three sorts and sort1 took a much greater amount of time to sort.
+
+sort2 uses: Merge
+
+How do you know?: sort2 takes a significantly shorter amount of time to sort for both the reversed and random lists.
+
+sort3 uses: Selection
+
+How do you know?: Selection sort is not as efficient as merge sort since its Big O is n^2. However, it is still faster than bubble sort.
+//both upper and lower bound the same, which is better?
